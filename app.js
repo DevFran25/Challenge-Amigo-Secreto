@@ -26,3 +26,9 @@ function agregarAmigo() {
     inputNombre.value = "";
     inputNombre.focus();
 }
+
+function mostrarNombreEnLista(nombre) {
+    const li = document.createElement("li");
+    li.textContent = nombre;
+    listaAmigosHTML.appendChild(li);
+}
