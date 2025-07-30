@@ -9,4 +9,20 @@ const listaAmigosHTML = document.getElementById("listaAmigos");
 const resultadoHTML = document.getElementById("resultado");
 
 
+function agregarAmigo() {
+    const nombre = inputNombre.value.trim();
 
+    // Validacion
+    if (nombre === "") {
+        alert("Por favor, ingresa un nombre válido.");
+        return;
+    }
+
+    // Agregar
+    listaAmigos.push(nombre);
+    mostrarNombreEnLista(nombre);
+
+    // Limpiar 
+    inputNombre.value = "";
+    inputNombre.focus();
+}
