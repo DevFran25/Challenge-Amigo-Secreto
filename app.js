@@ -32,3 +32,22 @@ function mostrarNombreEnLista(nombre) {
     li.textContent = nombre;
     listaAmigosHTML.appendChild(li);
 }
+
+function sortearAmigo() {
+    
+    // Validación
+    if (listaAmigos.length === 0) {
+        alert("Primero debes agregar al menos un nombre.");
+        return;
+    }
+
+    // Obtener nombre aleatorio
+    const indiceAleatorio = Math.floor(Math.random() * listaAmigos.length);
+    const nombreSorteado = listaAmigos[indiceAleatorio];
+
+    // Mostrar resultado
+    alert(`El nombre secreto es: ${nombreSorteado}`);
+
+    resultadoHTML.innerHTML = 
+    '<li> El nombre secreto es: <strong>${nombreSorteado}</strong></li>'; 
+}
