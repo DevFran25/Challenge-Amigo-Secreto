@@ -49,5 +49,5 @@ function sortearAmigo() {
     alert(`El nombre secreto es: ${nombreSorteado}`);
 
     resultadoHTML.innerHTML = 
-    '<li> El nombre secreto es: <strong>${nombreSorteado}</strong></li>'; 
+    `<li> El nombre secreto es: <strong>${nombreSorteado}</strong></li>`; 
 }
